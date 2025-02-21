@@ -46,3 +46,7 @@ print(linked_list.get_kth_node_from_last(2).data)
 print("끝까지 갔다가 k만큼 돌아가기")
 print(linked_list.get_kth_node_from_last2(2).data)
 print("k만큼 차이가 나는 node 2개를 이용해서 뒤의 노드 반환하기")# 7이 나와야 합니다!
+
+#시간 복잡도에서는 크게 차이가 나지 않는다.
+#다만 첫번째 방법은 2N의 목잡도를, 두번째 방법은 N의 복잡도를 가짐으로,
+#N의 크기가 커질 수록 첫번째 방법이 조금더 오래 걸리기는 한다.
