@@ -4,14 +4,14 @@ input = [4, 6, 2, 9, 1]
 
 def insertion_sort(array):
     n = len(array)
-    for i in range(1, n):
-        for j in range(i):
+    for i in range(1, n): #시간복잡도 O(N)
+        for j in range(i): #시간복잡도 O(N)
             if array[i - j - 1] > array[i - j]:
                 array[i - j - 1], array[i - j] = array[i - j], array[i - j - 1]
             else:
                 break
     return array
-
+#이 함수의 시간 복잡도 => O(N) * O(N) = O(N^2)
 
 
 insertion_sort(input)
